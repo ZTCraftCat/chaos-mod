@@ -1,0 +1,8 @@
+{
+    "_comment": "Items",
+    "item.chaos.eggplant_item": "חציל",
+    "item.chaos.cat_item": "חתול",
+
+    "_comment": "ItemGroups",
+    "itemGroup.chaos.chaos_items": "דברי כאוס"
+}

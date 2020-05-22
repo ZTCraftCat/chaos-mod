@@ -1,0 +1,8 @@
+{
+    "_comment": "Items",
+    "item.chaos.eggplant_item": "Aubergine",
+    "item.chaos.cat_item": "Cat",
+
+    "_comment": "ItemGroups",
+    "itemGroup.chaos.chaos_items": "Chaos Items"
+}

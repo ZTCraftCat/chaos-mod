@@ -1,0 +1,14 @@
+{
+    "_comment": "Items",
+    "item.chaos.eggplant_item": "Eggplant",
+    "item.chaos.cat_item": "Cat",
+    "item.chaos.catium_ingot": "Catium Ingot",
+    "item.chaos.eggplantium_ingpt": "Eggplantium Ingot",
+    "item.chaos.catium_helmet": "Catium Helmet",
+    "item.chaos.catium_chestplate": "Catium Chestplate",
+    "item.chaos.catium_leggings": "Catium Leggings",
+    "item.chaos.catium_boots": "Catium Boots",
+
+    "_comment": "ItemGroups",
+    "itemGroup.chaos.chaos_items": "Chaos Items"
+}
