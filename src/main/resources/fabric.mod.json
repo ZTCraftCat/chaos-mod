@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "id": "chaos",
+  "version": "${version}",
+  "name": "The ChaosMC Mod",
+  "description": "This mod is intented for use in the ChaosMC Survival server.",
+  "authors": [
+    "YTG123, ZTCraftCat, ChaosMC Team"
+  ],
+  "contact": {
+    "homepage": "http://chaosmc.space",
+    "souces": "https://github.com/YTG1234/chaos-mod.git"
+  },
+  "license": "MIT",
+  "icon": "assets/chaos/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "space.chaosmc.chaos.CommonMain"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.4.0",
+    "fabric": "*"
+  },
+  "mixins": [
+    "chaos.mixins.json"
+  ]
+}
