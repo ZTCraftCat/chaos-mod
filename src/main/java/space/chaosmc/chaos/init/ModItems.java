@@ -55,6 +55,6 @@ public final class ModItems {
         Registry.register(Registry.ITEM, CATIUM_HELMET.getIdentifier(), CATIUM_HELMET);
         Registry.register(Registry.ITEM, CATIUM_CHESTPLATE.getIdentifier(), CATIUM_CHESTPLATE);
         Registry.register(Registry.ITEM, CATIUM_LEGGINGS.getIdentifier(), CATIUM_LEGGINGS);
-        Registry.register(Registry.ITEM, CATIUM_LEGGINGS.getIdentifier(), CATIUM_BOOTS);
+        Registry.register(Registry.ITEM, CATIUM_BOOTS.getIdentifier(), CATIUM_BOOTS);
     }
 }
