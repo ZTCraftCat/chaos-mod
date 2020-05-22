@@ -10,40 +10,59 @@ import space.chaosmc.chaos.materials.ModMaterials;
 import space.chaosmc.chaos.util.Reference;
 
 public final class ModItems {
-    public static final CatItem CAT_ITEM = new CatItem();
-    public static final EggplantItem EGGPLANT_ITEM = new EggplantItem();
-    public static final CatiumIngotItem CATIUM_INGOT = new CatiumIngotItem();
-    public static final EggplantiumIngotItem EGGPLANTIUM_INGOT = new EggplantiumIngotItem();
+    public static final CatItem CAT_ITEM;
+    public static final EggplantItem EGGPLANT_ITEM;
+    public static final CatiumIngotItem CATIUM_INGOT;
+    public static final EggplantiumIngotItem EGGPLANTIUM_INGOT;
+
+    // Items
+    static {
+        CAT_ITEM = new CatItem();
+        EGGPLANT_ITEM = new EggplantItem();
+        CATIUM_INGOT = new CatiumIngotItem();
+        EGGPLANTIUM_INGOT = new EggplantiumIngotItem();
+    }
+
+    // Catium Armor
+    static {
+        CATIUM_HELMET = new ModArmorItem(ModMaterials.CATIUM,
+                                         EquipmentSlot.HEAD,
+                                         (new Item.Settings().group(ItemGroup.COMBAT)),
+                                         new Identifier(
+                                                 Reference.MODID.getValue(),
+                                                 "catium_helmet"));
+
+        CATIUM_CHESTPLATE = new ModArmorItem(ModMaterials.CATIUM,
+                                             EquipmentSlot.CHEST,
+                                             (new Item.Settings().group(ItemGroup.COMBAT)),
+                                             new Identifier(
+                                                     Reference.MODID.getValue(),
+                                                     "catium_chestplate"));
+
+        CATIUM_LEGGINGS = new ModArmorItem(ModMaterials.CATIUM,
+                                           EquipmentSlot.LEGS,
+                                           (new Item.Settings().group(ItemGroup.COMBAT)),
+                                           new Identifier(
+                                                   Reference.MODID.getValue(),
+                                                   "catium_leggings"));
+
+        CATIUM_BOOTS = new ModArmorItem(ModMaterials.CATIUM,
+                                        EquipmentSlot.FEET,
+                                        (new Item.Settings().group(ItemGroup.COMBAT)),
+                                        new Identifier(
+                                                Reference.MODID.getValue(),
+                                                "catium_boots"));
+    }
 
 
     // armor
-    public static final ModArmorItem CATIUM_HELMET = new ModArmorItem(ModMaterials.CATIUM,
-                                                                      EquipmentSlot.HEAD,
-                                                                      (new Item.Settings().group(ItemGroup.COMBAT)),
-                                                                      new Identifier(
-                                                                              Reference.MODID.getValue(),
-                                                                              "catium_helmet"));
+    public static final ModArmorItem CATIUM_HELMET;
 
-    public static final ModArmorItem CATIUM_CHESTPLATE = new ModArmorItem(ModMaterials.CATIUM,
-                                                                          EquipmentSlot.CHEST,
-                                                                          (new Item.Settings().group(ItemGroup.COMBAT)),
-                                                                          new Identifier(
-                                                                                  Reference.MODID.getValue(),
-                                                                                  "catium_chestplate"));
+    public static final ModArmorItem CATIUM_CHESTPLATE;
 
-    public static final ModArmorItem CATIUM_LEGGINGS = new ModArmorItem(ModMaterials.CATIUM,
-                                                                        EquipmentSlot.LEGS,
-                                                                        (new Item.Settings().group(ItemGroup.COMBAT)),
-                                                                        new Identifier(
-                                                                                Reference.MODID.getValue(),
-                                                                                "catium_leggings"));
+    public static final ModArmorItem CATIUM_LEGGINGS;
 
-    public static final ModArmorItem CATIUM_BOOTS = new ModArmorItem(ModMaterials.CATIUM,
-                                                                     EquipmentSlot.FEET,
-                                                                     (new Item.Settings().group(ItemGroup.COMBAT)),
-                                                                     new Identifier(
-                                                                             Reference.MODID.getValue(),
-                                                                             "catium_boots"));
+    public static final ModArmorItem CATIUM_BOOTS;
 
     public static void registerItems() {
         Registry.register(Registry.ITEM, CAT_ITEM.getIdentifier(), CAT_ITEM);
